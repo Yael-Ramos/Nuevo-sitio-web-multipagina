@@ -64,58 +64,76 @@
         margin: 2rem auto;
         padding: 0.1rem;
     }
-
-    .hero{
-        background: white;
-        border-radius: 10px;
-        box-shadow:  0 8px 15px rgba(0, 0, 0, 0.1);
-        padding: 3rem 2rem;
-        text-align: center;
+    section.presentacion{
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    padding: 2.5rem 3rem;
     }
-
-    .hero h1{
-        font-size: 2.8rem;
+    section.presentacion h1{
+        font-size: 2.4rem;
         margin-bottom: 1rem;
         color: var(--Negro-carbon);
     }
 
-    .hero p{
-        font-size: 1.2rem;
-        margin-bottom: 2rem;
-        color: #555;
-        max-width: 600px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .boton-primario{
-        background-color: var(--Rojo-brillante);
-        color: white;
-        padding: 0.8rem 2rem;
+    section.presentacion p{
         font-size: 1.1rem;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        text-decoration: none;
-        font-weight: 600;
-        transition: background-color 0.3s ease;
-        display:inline-block;
+        margin-bottom: 1.5rem;
+        color: #555;
     }
 
-    .boton-primario:hover{
-background-color: var(--Rojo-ladrillo);
+    .habilidades{
+        margin-top: 2rem;
     }
+
+    .habilidades h2{
+        color: var(--Negro-carbon);
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+        border-bottom: 2px solid var(--Rojo-brillante);
+        padding-bottom: 0.3rem;
+        width: fit-content;
+    }
+
+    ul.lista-habilidades{
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+        gap: 1rem;
+    }
+
+    ul.lista-habilidades li{
+        background: var(--Rojo-brillante);
+        color: white;
+        padding: 0.5rem 1.2rem;
+        border-radius: 20px;
+        font-weight: 600;
+        font-size: 1rem;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+        user-select: none;
+    }
+
     footer{
-        background:var(--Negro-carbon);
+        background: var(--Negro-carbon);
         color: #ddd;
         text-align: center;
         padding: 1rem 0;
         margin-top: auto;
         font-size: 0.9rem;
         user-select: none;
+
     }
 
-    @media(max-width: 768px) {
+    section presentacion{
+        padding: 1.5rem 1.5rem;
+    }
+
+    section presentacion h1{
+        font-size: 1.8rem;
+    }
+
+     @media(max-width: 768px) {
         header .contenedor-header {
             flex-direction: column;
             align-items: flex-start;
