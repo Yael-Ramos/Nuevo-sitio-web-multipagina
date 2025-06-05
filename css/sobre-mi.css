@@ -114,6 +114,14 @@
         user-select: none;
     }
 
+    p {
+        text-align: center;
+        max-width: 600px;
+        margin: 1rem auto;
+        color: #555;
+        line-height: 1.5;
+        font-size: 1.1rem;
+    }
     footer{
         background: var(--Negro-carbon);
         color: #ddd;
